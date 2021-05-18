@@ -1,0 +1,116 @@
+tribute page:
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bitter" />
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<main id="main">
+  <header>
+    <br>
+  <h1 id="title">Maurizia Aldeiturriaga</h1>
+    <h2>- Legendary tambourine player -</h2>
+  <div id="img-div">
+    <figure>
+      <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/4/49/Maurizia.jpg" alt="Maurizia Aldaiturriaga" class="center black-border">      
+      <figcaption id="img-caption">Maurizia Aldeiturriaga</figcaption>
+      <br>
+    </figure>
+    </header>
+    <div id="tribute-info" class="container">      
+      <div class="item1"></div>
+      <div class="item2>">
+        <p>Maurizia was a famous tambourine player, who was born in 1904 in Zeberio Bizkaia, Basque Country). Maurizia is one of those women that was become visible in men world.  </p>       
+        <p>The most significant aspect of her actuations was her capacity of improvisation when composing couplets and her special voice.</p>
+        <p>Althoug, tambourine is a classical basque music instrument, the influence of Maurizia is visible also in different expressions of basque culture. The most known example is the Kortatu's song "Tolosa Ihauteriak": the voice of Maurizia can be heared in that song.</p>
+        <p>Here is a summary of the time line of Maurizia's life:</p>
+        <ul>
+          <li><strong>1904:</strong> Maurizia was born in Zeberio (Bizkaia, Basque Country)</li><br>
+          <li><strong>1913:</strong> She was sent out to work as a maid when she was just 9-years-old, as usual at that time.  </li><br>
+          <li><strong>1927:</strong> She was married with Benantzio Bernaola, who was her artistic partner.</li><br>
+          <li><strong>1936:</strong> Civil war and the next years were specially hard times for them.</li><br>
+          <li><strong>1985:</strong> "Euskal Herriko soinu tresnak" record was published.</li><br>
+          <li><strong>1988:</strong> She died at the age of 83. </li><br>
+          <li><strong>1998:</strong> "Alboka eta trikitixa" record was published.</li><br>
+        </ul>
+        <p> Click here to view more about <a id="tribute-link" href="https://eu.wikipedia.org/wiki/Maurizia_Aldeiturriaga" target="_blank" >Maurizia Aldeiturriaga</a> </p>
+      </div>          
+      <div class="item3"></div>
+    </div>
+  </div>
+</main>
+
+h1 {
+  text-align: center;
+  font-family: Bitter;
+}
+h2 {
+  text-align: center;
+  font-family: Bitter;
+}
+header {
+  background: #f0e9aa;  
+}
+p{
+  font-family: Bitter;
+  padding: 10px 70px;
+}
+ul{
+  padding: 0 100px;
+}
+figcaption {
+  font-family: Bitter;
+  font-size: 12px;
+}
+.item1 {
+  background: #e1dfce;
+  grid-area: advert;
+}
+
+.item2 {
+  background: #f5f4ec;
+  grid-area: content;  
+  padding: 10px 30px;
+}
+.item3 {
+  background: #e1dfce;
+  grid-area: advert2;
+}
+.container {
+  background: #f5f4ec;
+  font-family: Bitter;
+  font-size: 18px;
+  text-align: justify;
+  max-width: 100%;
+  height: max;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto; 
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0;  
+  grid-template-areas:
+      "advert content advert2";
+}
+.center {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.black-border{  
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+}
+
+figcaption {
+  text-align: center;
+}
